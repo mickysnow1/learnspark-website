@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSpark</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <h2 class="logo">LearnSpark</h2>
+    <ul class="nav-list">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#challenges" class="nav-link">Challenges</a></li>
+      <li><a href="#how-learning" class="nav-link">Learning Process</a></li>
+      <li><a href="#plans" class="nav-link">Plans</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
+      <li><a href="#start-journey" class="nav-link">Start</a></li>
+      <li><a href="#footer" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+  <main class="main-content">
+    <section id="hero" class="section">
+      <h1 class="text-gradient">Where Curiosity Meets Learning Adventures</h1>
+      <p>Spark your child's love for learning through interactive challenges and rewards.</p>
+    </section>
+    <section id="challenges" class="section">
+      <h2 class="text-gradient">Challenges & Solutions</h2>
+      <div class="grid">
+        <div class="card"><h3>Challenges</h3><ul><li>Lack of engagement</li><li>Tracking progress</li></ul></div>
+        <div class="card"><h3>Solutions</h3><ul><li>Gamified learning</li><li>Progress dashboards</li></ul></div>
+      </div>
+    </section>
+    <section id="how-learning" class="section">
+      <h2 class="text-gradient">Learning Process</h2>
+      <div class="grid">
+        <div class="card"><h3>Discover 🎯</h3><p>Curiosity-driven topics.</p></div>
+        <div class="card"><h3>Learn 📚</h3><p>Guided lessons and feedback.</p></div>
+        <div class="card"><h3>Achieve 🏆</h3><p>Badges and progress sharing.</p></div>
+        <div class="card"><h3>Grow 🔄</h3><p>Adaptive learning paths.</p></div>
+      </div>
+    </section>
+    <section id="plans" class="section"><h2 class="text-gradient">Choose Your Learning Plan</h2><div id="plans-root"></div></section>
+    <section id="faq" class="section">
+      <h2 class="text-gradient">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3 class="faq-question-wrapper"><button class="faq-question" aria-expanded="false">Is LearnSpark suitable for young children?<span class="toggle-icon">+</span></button></h3>
+        <div class="faq-answer"><p>Yes, LearnSpark is designed for ages 4-12.</p></div>
+      </div>
+    </section>
+    <section id="start-journey" class="section">
+      <h2 class="text-gradient">Start Your Learning Journey</h2>
+      <form id="start-journey-form"><input type="text" placeholder="Child's Name" required><input type="number" placeholder="Age (4-12)" required min="4" max="12"><button type="submit" class="btn">Begin Adventure</button></form>
+    </section>
+    <footer id="footer" class="section"><p>&copy; 2025 LearnSpark.</p><p><a href="mailto:support@learnspark.com">support@learnspark.com</a></p></footer>
+  </main>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
